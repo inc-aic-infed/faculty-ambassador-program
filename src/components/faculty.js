@@ -43,7 +43,7 @@ export default function Faculty() {
 <p>
 
 Faculty members shape careers, inspire confidence and unlock potential.
-As an AIC-INFED Faculty Campus Ambassador, you become the catalyst who helps students discover innovation, entrepreneurship and startup opportunities.
+As an AIC-INFED Faculty Ambassador, you become the catalyst who helps students discover innovation, entrepreneurship and startup opportunities.
 
 </p>
 

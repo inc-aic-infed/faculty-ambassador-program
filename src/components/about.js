@@ -15,7 +15,7 @@ export default function About() {
                 </h2>
 
                 <p>
-                    The AIC-INFED Campus Ambassador Program empowers faculty members and students to become catalysts for innovation within their institutions.
+                    The AIC-INFED Faculty Ambassador Program empowers faculty members and students to become catalysts for innovation within their institutions.
                 </p>
 
                 <p>

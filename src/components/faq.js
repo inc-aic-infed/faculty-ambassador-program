@@ -3,6 +3,11 @@ export default function FAQ() {
     const faqs = [
 
         {
+            question: "What is the duration of the program?",
+            answer: "The duration of the Faculty Ambassador Program shall be one-year."
+        },
+
+        {
             question: "Who can apply for the Faculty Ambassador Program?",
             answer: "IIC Members, E-Cell Co-ordinators & Incubation representatives from Higher Educational Institutions, Universities, Engineering Colleges, Management Institutes and other academic institutions who are passionate about innovation and entrepreneurship can apply."
         },
@@ -26,7 +31,6 @@ export default function FAQ() {
             question: "How do I apply?",
             answer: "Simply click on the 'Become a Faculty Ambassador' button available on this page and complete the online application form."
         }
-
     ];
 
     return `

@@ -65,7 +65,7 @@ export default function Why() {
             </h2>
 
             <p>
-                The Campus Ambassador Program empowers students and faculty to lead entrepreneurship and innovation initiatives within their institutions while connecting with AIC-INFED's national ecosystem.
+                The Faculty Ambassador Program empowers students and faculty to lead entrepreneurship and innovation initiatives within their institutions while connecting with AIC-INFED's national ecosystem.
             </p>
 
         </div>
