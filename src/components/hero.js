@@ -1,44 +1,99 @@
 export default function Hero() {
-  return `
+
+    return `
+
     <section id="hero">
 
-      <div class="hero-bg">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="grid-overlay"></div>
-      </div>
+        <div class="hero-container">
 
-      <div class="hero-content">
+            <div class="hero-left">
 
-        <span class="badge">
-          🚀 Applications Open for 2026
-        </span>
+                <div class="hero-tag">
+                    A FLAGSHIP INITIATIVE BY AIC-INFED
+                </div>
 
-        <h1>
-          Empowering <span>Campuses</span>.<br>
-          Inspiring <span>Innovation</span>.<br>
-          Building Future <span>Entrepreneurs</span>.
-        </h1>
+                <h1>
+                    Join the distinguished community of Faculty Champions
+                    <span>Shaping Tomorrow's Innovators.</span>
+                </h1>
 
-        <p>
-          Become the innovation leader of your institution and join
-          AIC-INFED in building India's next generation of entrepreneurs.
-        </p>
+                <p>
+                    The AIC-INFED Faculty Ambassador Programme brings together
+                    a community of educators committed to advancing
+                    innovation and entrepreneurship within their institutions.
+                </p>
 
-        <div class="hero-buttons">
+                <p>
+                    As a Faculty Ambassador, you become an anchor for innovation
+                    on your campus—connecting promising talent with opportunity,
+                    ideas with expertise, and ambition with action.
+                </p>
 
-          <a href="#faculty" class="btn-primary">
-            Become an Ambassador →
-          </a>
+                <div class="hero-buttons">
 
-          <a href="#about" class="btn-secondary">
-            Learn More
-          </a>
+                    <a
+                        href="https://forms.gle/9u9xVDaMo4zPvoa98"
+                        target="_blank"
+                        class="btn-primary"
+                    >
+                        Become a Faculty Ambassador
+                    </a>
+
+                    <a
+                        href="#about"
+                        class="btn-secondary"
+                    >
+                        Explore the Programme
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-right">
+
+                <div class="hero-stat">
+
+                    <span>01</span>
+
+                    <h3>Lead Innovation</h3>
+
+                    <p>
+                        Inspire entrepreneurial thinking and create pathways for students to explore innovation beyond the classroom.
+                    </p>
+
+                </div>
+
+                <div class="hero-stat">
+
+                    <span>02</span>
+
+                    <h3>Connect Talent</h3>
+
+                    <p>
+                        Bridge promising innovators with mentors, founders, programmes and opportunities across the AIC-INFED ecosystem.
+                    </p>
+
+                </div>
+
+                <div class="hero-stat">
+
+                    <span>03</span>
+
+                    <h3>Create Lasting Impact</h3>
+
+                    <p>
+                        Help cultivate an enduring culture of innovation and entrepreneurship within your institution.
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
-      </div>
-
     </section>
-  `;
+
+    `;
+
 }

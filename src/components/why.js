@@ -3,51 +3,31 @@ export default function Why() {
     const cards = [
 
         {
-            icon: "🚀",
-            title: "Startup Ecosystem",
-            text: "Gain access to AIC-INFED's vibrant startup ecosystem and innovation initiatives."
+            number: "01",
+            title: "Inspire",
+            subtitle: "Set the Ambition.",
+            text: "Cultivate curiosity and entrepreneurial thinking. Encourage students to question convention, explore possibilities and engage with meaningful problems."
         },
 
         {
-            icon: "👨🏻‍🏫",
-            title: "Mentorship",
-            text: "Interact with founders, industry experts, and startup mentors."
+            number: "02",
+            title: "Identify",
+            subtitle: "Recognise Potential Early.",
+            text: "See what others may overlook. Identify promising students, unconventional ideas and emerging innovators while their potential is still taking shape."
         },
 
         {
-            icon: "💰",
-            title: "Funding Opportunities",
-            text: "Learn about grants, incubation, and startup funding pathways."
+            number: "03",
+            title: "Connect",
+            subtitle: "Open the Right Doors.",
+            text: "Create meaningful pathways between promising talent and the people, expertise and opportunities that can help ideas move forward."
         },
 
         {
-            icon: "🌍",
-            title: "National Exposure",
-            text: "Represent your institution and connect with innovators across India."
-        },
-
-        {
-            icon: "🏢",
-            title: "Incubation Support",
-            text: "Explore incubation opportunities for your startup ideas."
-        },
-
-        {
-            icon: "💡",
-            title: "Innovation Programs",
-            text: "Participate in hackathons, bootcamps, and innovation challenges."
-        },
-
-        {
-            icon: "🤝",
-            title: "Networking",
-            text: "Build meaningful relationships with entrepreneurs and ecosystem partners."
-        },
-
-        {
-            icon: "📈",
-            title: "Leadership",
-            text: "Develop leadership, communication, and event management skills."
+            number: "04",
+            title: "Catalyse",
+            subtitle: "Turn Possibility Into Momentum.",
+            text: "Help ideas move beyond conversation—towards experimentation, validation, creation and meaningful action."
         }
 
     ];
@@ -56,35 +36,73 @@ export default function Why() {
 
     <section id="why">
 
-        <div class="section-heading">
+        <div class="why-container">
 
-            <span>WHY AIC-INFED</span>
+            <div class="section-heading why-heading">
 
-            <h2>
-                Your Gateway to India's Innovation Ecosystem
-            </h2>
+                <span>WHY AIC-INFED</span>
 
-            <p>
-                The Faculty Ambassador Program empowers students and faculty to lead entrepreneurship and innovation initiatives within their institutions while connecting with AIC-INFED's national ecosystem.
-            </p>
+                <h2>
+                    Where Ambitious Ideas Find Their Ecosystem.
+                </h2>
 
-        </div>
+                <p>
+                    Innovation does not flourish in isolation. It grows through
+                    curiosity, conversation, mentorship and access to people who
+                    have travelled the path before.
+                </p>
 
-        <div class="why-grid">
+                <p>
+                    AIC-INFED brings these dimensions of the innovation ecosystem
+                    closer to academic communities—connecting institutions with
+                    founders, mentors, industry experts, investors and emerging
+                    opportunities.
+                </p>
 
-            ${cards.map(card => `
+            </div>
 
-                <div class="why-card">
+            <div class="why-grid">
 
-                    <div class="icon">${card.icon}</div>
+                ${cards.map(card => `
 
-                    <h3>${card.title}</h3>
+                    <article class="why-card">
 
-                    <p>${card.text}</p>
+                        <div class="why-card-top">
 
-                </div>
+                            <span class="why-number">
+                                ${card.number}
+                            </span>
 
-            `).join("")}
+                            <span class="why-line"></span>
+
+                        </div>
+
+                        <div class="why-card-content">
+
+                            <h3>${card.title}</h3>
+
+                            <h4>${card.subtitle}</h4>
+
+                            <p>${card.text}</p>
+
+                        </div>
+
+                    </article>
+
+                `).join("")}
+
+            </div>
+
+            <div class="why-closing">
+
+                <span class="closing-mark">“</span>
+
+                <p>
+                    Innovation is built by people who know where to look—
+                    and who know how to bring the right people into the room.
+                </p>
+
+            </div>
 
         </div>
 

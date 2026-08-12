@@ -1,112 +1,117 @@
 export default function Contact() {
 
-return `
+    return `
 
 <section id="contact">
 
-<div class="contact-wrapper">
+    <div class="contact-container">
 
-<div class="contact-left">
+        <div class="contact-intro">
 
-<span>CONTACT US</span>
+            <span class="section-tag">
+                BEGIN THE CONVERSATION
+            </span>
 
-<h2>
+            <h2>
+                Every Meaningful Partnership Begins with a Conversation.
+            </h2>
 
-Ready to Become a Faculty Ambassador?
+            <p>
+                Whether you are exploring the Faculty Ambassador Programme,
+                seeking additional information or considering how your institution
+                can engage with AIC-INFED, our team would be pleased to hear from you.
+            </p>
 
-</h2>
+        </div>
 
-<p>
 
-Join AIC-INFED's growing network of educators driving innovation and entrepreneurship across campuses. We'd love to hear from you.
+        <div class="contact-grid">
 
-</p>
+            <article class="contact-card">
 
-<div class="contact-details">
+                <span class="contact-label">
+                    PROGRAMME OFFICE
+                </span>
 
-<div class="contact-item">
+                <h3>
+                    AIC-INFED
+                </h3>
 
-<div class="contact-icon">📧</div>
+                <p>
+                    AIC-IIM Nagpur Foundation for Entrepreneurship Development
+                </p>
 
-<div>
+            </article>
 
-<h3>Email</h3>
 
-<p>aic-infed@iimnagpur.ac.in</p>
+            <article class="contact-card">
 
-</div>
+                <span class="contact-label">
+                    EMAIL
+                </span>
 
-</div>
+                <h3>
+                    Write to Us
+                </h3>
 
-<div class="contact-item">
+                <a href="mailto:aic-infed@iimnagpur.ac.in">
+                    aic-infed@iimnagpur.ac.in
+                </a>
 
-<div class="contact-icon">📞</div>
+            </article>
 
-<div>
 
-<h3>Phone</h3>
+            <article class="contact-card">
 
-<p>0712-287-0368</p>
+                <span class="contact-label">
+                    TELEPHONE
+                </span>
 
-</div>
+                <h3>
+                    Speak with the Team
+                </h3>
 
-</div>
+                <a href="tel:+918806133723">
+                    +91 8806133723
+                </a>
 
-<div class="contact-item">
+            </article>
 
-<div class="contact-icon">📍</div>
 
-<div>
+            <article class="contact-card">
 
-<h3>Address</h3>
+                <span class="contact-label">
+                    LOCATION
+                </span>
 
-<p>
+                <h3>
+                    AIC-INFED
+                </h3>
 
-AIC-INFED<br>
+                <p>
+                    Indian Institute of Management Nagpur,<br>
+                    Plot No. 1, Sector 20, MIHAN,<br>
+                    Nagpur, Maharashtra – 441108
+                </p>
 
-Indian Institute of Management Nagpur<br>
+            </article>
 
-Plot No. 1, Sector 20,<br>
+        </div>
 
-MIHAN, Nagpur,<br>
 
-Maharashtra – 441108
+        <div class="contact-cta">
 
-</p>
+            <p>
+                If your question remains unanswered, we would be delighted to hear from you.
+            </p>
 
-</div>
+            <a href="mailto:aic-infed@iimnagpur.ac.in">
+                Get in Touch →
+            </a>
 
-</div>
+        </div>
 
-</div>
-
-</div>
-
-<div class="contact-right">
-
-<h3>
-
-Become a Faculty Ambassador
-
-</h3>
-
-<p>
-
-Take the next step towards building an innovation-driven campus.
-
-</p>
-
-<a
-href="https://forms.gle/9u9xVDaMo4zPvoa98"
-target="_blank">
-
-Apply Now →
-
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 

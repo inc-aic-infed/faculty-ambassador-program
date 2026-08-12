@@ -3,69 +3,97 @@ export default function FAQ() {
     const faqs = [
 
         {
-            question: "What is the duration of the program?",
-            answer: "The duration of the Faculty Ambassador Program shall be one-year."
+            question: "Who is eligible to become a Faculty Ambassador?",
+            answer: "Faculty members from Higher Educational Institutions (HEIs) across India who are passionate about innovation, entrepreneurship and student development are encouraged to apply."
         },
 
         {
-            question: "Who can apply for the Faculty Ambassador Program?",
-            answer: "IIC Members, E-Cell Co-ordinators & Incubation representatives from Higher Educational Institutions, Universities, Engineering Colleges, Management Institutes and other academic institutions who are passionate about innovation and entrepreneurship can apply."
+            question: "Is there any application or participation fee?",
+            answer: "No. The Faculty Ambassador Programme is offered entirely free of cost. There are no application or participation charges at any stage of the programme."
         },
 
         {
-            question: "Is there any application fee?",
-            answer: "No. There is no application or participation fee for becoming an AIC-INFED Faculty Ambassador."
+            question: "What does the programme expect from Faculty Ambassadors?",
+            answer: "Faculty Ambassadors serve as institutional catalysts for innovation by encouraging entrepreneurial thinking, identifying promising innovators, facilitating innovation-led engagements and connecting students with opportunities available through AIC-INFED."
         },
 
         {
-            question: "What is expected from a Faculty Ambassador?",
-            answer: "Faculty Ambassadors are expected to promote innovation and entrepreneurship, identify promising student innovators, connect them with AIC-INFED and organize innovation-related engagements within their institution."
+            question: "How much time does the programme require?",
+            answer: "The programme is designed to complement existing academic responsibilities. Engagements are distributed throughout the year, allowing ambassadors to contribute meaningfully while maintaining flexibility within their institutional commitments."
         },
 
         {
-            question: "Will I receive a certificate or recognition?",
-            answer: "Yes. Selected Faculty Ambassadors will receive official recognition from AIC-INFED and opportunities to participate in various ecosystem activities."
+            question: "Will Faculty Ambassadors receive formal recognition?",
+            answer: "Yes. Faculty Ambassadors who actively participate throughout the programme will receive an official Certificate of Recognition from AIC-INFED."
         },
 
         {
-            question: "How do I apply?",
-            answer: "Simply click on the 'Become a Faculty Ambassador' button available on this page and complete the online application form."
+            question: "What opportunities become available through the programme?",
+            answer: "Participants receive invitations to curated workshops, innovation forums, leadership dialogues, startup engagements, ecosystem events and other flagship initiatives organised by AIC-INFED."
+        },
+
+        {
+            question: "How does the selection process work?",
+            answer: "Admission to the Faculty Ambassador Programme is based entirely on the merit of each application. Every submission is evaluated by the AIC-INFED team against the programme's objectives and the applicant's potential to contribute meaningfully to the innovation ecosystem. Participation in the programme is offered at no cost to selected faculty members."
+        },
+
+        {
+            question: "How can I apply?",
+            answer: "Applications may be submitted through the online application form. Selected applicants will receive further communication regarding onboarding, orientation and the next steps of the programme."
         }
+
     ];
 
     return `
 
 <section id="faq">
 
-<div class="section-heading">
+    <div class="faq-wrapper">
 
-<span>FREQUENTLY ASKED QUESTIONS</span>
+        <div class="section-heading faq-heading">
 
-<h2>Everything You Need to Know</h2>
+            <span>FAQ</span>
 
-<p>
+            <h2>
+                Frequently Asked Questions
+            </h2>
 
-Find answers to some of the most common questions about the Faculty Ambassador Program.
+            <p>
+                Choosing to become an AIC-INFED Faculty Ambassador is an important commitment. Below are answers to some of the questions educators frequently ask before applying to the programme.
+            </p>
 
-</p>
+        </div>
 
-</div>
 
-<div class="faq-container">
+        <div class="faq-container">
 
-${faqs.map(faq => `
+            ${faqs.map((faq, index) => `
 
-<div class="faq-item">
+                <article class="faq-item">
 
-<h3>${faq.question}</h3>
+                    <div class="faq-number">
+                        ${String(index + 1).padStart(2, "0")}
+                    </div>
 
-<p>${faq.answer}</p>
+                    <div class="faq-content">
 
-</div>
+                        <h3>
+                            ${faq.question}
+                        </h3>
 
-`).join("")}
+                        <p>
+                            ${faq.answer}
+                        </p>
 
-</div>
+                    </div>
+
+                </article>
+
+            `).join("")}
+
+        </div>
+
+    </div>
 
 </section>
 

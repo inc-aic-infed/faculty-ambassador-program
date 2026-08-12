@@ -3,39 +3,38 @@ export default function Benefits() {
     const benefits = [
 
         {
-            icon:"🏅",
-            title:"Professional Recognition",
-            text:"Receive official recognition as an AIC-INFED Faculty Ambassador and showcase your contribution towards fostering innovation and entrepreneurship."
+            icon: "🎓",
+            title: "INTELLECTUAL CAPITAL",
+            subtitle: "Stay at the Edge of What Is Emerging.",
+            text: "Gain curated exposure to frontier thinking in technology, entrepreneurship and venture building through masterclasses, leadership dialogues and exchanges with accomplished founders, practitioners and ecosystem leaders."
         },
 
         {
-            icon:"🤝",
-            title:"Ecosystem Access",
-            text:"Connect with startup founders, mentors, investors, industry experts and innovation leaders from across the country."
+            icon: "🏛️",
+            title: "INSTITUTIONAL LEVERAGE",
+            subtitle: "Turn Individual Access into Institutional Advantage.",
+            text: "Extend the value of your association with AIC-INFED to your institution through access to relevant expertise, innovation programmes, entrepreneurial opportunities and ecosystem connections."
         },
 
         {
-            icon:"📚",
-            title:"Faculty Development",
-            text:"Gain access to exclusive workshops, learning sessions, innovation programs and entrepreneurship development opportunities."
+            icon: "🏅",
+            title: "PROFESSIONAL STATURE",
+            subtitle: "Give Your Innovation Leadership a Wider Identity.",
+            text: "Receive formal recognition as an AIC-INFED Faculty Ambassador—adding a distinguished ecosystem association to the innovation and entrepreneurship work you already champion within your institution."
         },
 
         {
-            icon:"🏛️",
-            title:"Institutional Leadership",
-            text:"Position your institution as a hub for innovation and entrepreneurship while inspiring students to build impactful ventures."
+            icon: "🔑",
+            title: "PRIVILEGED ECOSYSTEM PROXIMITY",
+            subtitle: "Enter Conversations That Rarely Reach the Classroom.",
+            text: "Gain curated access to selected founder interactions, leadership conversations, innovation forums and ecosystem engagements that bring you closer to the people, perspectives and developments shaping entrepreneurship."
         },
 
         {
-            icon:"🌐",
-            title:"Network Expansion",
-            text:"Become part of a vibrant network of faculty champions collaborating to strengthen India's innovation ecosystem."
-        },
-
-        {
-            icon:"🚀",
-            title:"Catalyst for Change",
-            text:"Play a meaningful role in nurturing future entrepreneurs and creating a lasting innovation culture within your campus."
+            icon: "🌐",
+            title: "A HIGH-CALIBRE PEER CIRCLE",
+            subtitle: "Connect With Faculty Who Share Your Ambition for Innovation.",
+            text: "Become part of a cross-institutional community of innovation-active educators—opening avenues for meaningful professional relationships, exchange of perspectives and connections beyond your immediate academic network."
         }
 
     ];
@@ -44,67 +43,97 @@ export default function Benefits() {
 
 <section id="benefits">
 
-<div class="section-heading">
+    <div class="benefits-container">
 
-<span>BENEFITS</span>
+        <div class="section-heading benefits-heading">
 
-<h2>
+            <span>
+                BEYOND RECOGNITION. TOWARDS INFLUENCE.
+            </span>
 
-Why Become a Faculty Ambassador?
+            <h2>
+                The Distinction of Becoming an AIC-INFED Faculty Ambassador.
+            </h2>
 
-</h2>
+            <p>
+                You already create impact within your institution.
+                The Faculty Ambassador Programme is designed to extend
+                the reach of that influence.
+            </p>
 
-<p>
+            <p>
+                Through distinguished learning, institutional leverage,
+                professional recognition and privileged ecosystem access,
+                AIC-INFED connects your existing leadership to a larger
+                world of ideas, people and possibilities.
+            </p>
 
-Beyond recognition, you'll gain access to an inspiring ecosystem of innovators, mentors, founders and opportunities while creating lasting impact within your institution.
+        </div>
 
-</p>
 
-</div>
+        <div class="benefits-grid">
 
-<div class="benefits-grid">
+            ${benefits.map((item, index) => `
 
-${benefits.map(item=>`
+                <article class="benefit-card">
 
-<div class="benefit-card">
+                    <div class="benefit-top">
 
-<div class="benefit-icon">
+                        <div class="benefit-icon">
+                            ${item.icon}
+                        </div>
 
-${item.icon}
+                    </div>
 
-</div>
 
-<h3>${item.title}</h3>
+                    <div class="benefit-content">
 
-<p>${item.text}</p>
+                        <h3>
+                            ${item.title}
+                        </h3>
 
-</div>
+                        <h4>
+                            ${item.subtitle}
+                        </h4>
 
-`).join("")}
+                        <p>
+                            ${item.text}
+                        </p>
 
-</div>
+                    </div>
 
-<div class="benefit-highlight">
+                </article>
 
-<h2>
+            `).join("")}
 
-"One Faculty Member can inspire hundreds of future innovators."
+        </div>
 
-</h2>
 
-<p>
+        <div class="benefit-highlight">
 
-Your leadership can shape ideas into startups, encourage innovation-driven thinking, and create an entrepreneurial culture that lasts for generations.
+            <span class="benefit-highlight-label">
+                THE DISTINCTION
+            </span>
 
-</p>
+            <h2>
+                Leadership is measured not only by what we achieve.
+            </h2>
 
-<a href="https://forms.gle/9u9xVDaMo4zPvoa98" target="_blank">
+            <h3>
+                It is measured by the opportunities we create for others.
+            </h3>
 
-Become a Faculty Ambassador →
+            <a
+                href="https://forms.gle/9u9xVDaMo4zPvoa98"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Apply as Faculty Ambassador →
+            </a>
 
-</a>
+        </div>
 
-</div>
+    </div>
 
 </section>
 

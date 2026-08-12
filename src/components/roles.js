@@ -1,88 +1,132 @@
-export default function Roles() {
+export default function Role() {
 
-    const roles = [
+    const responsibilities = [
 
         {
-            icon:"💡",
-            title:"Lead Innovation",
-            text:"Drive innovation and entrepreneurship initiatives within your institution by creating awareness and encouraging participation."
+            icon: "🔎",
+            title: "RECOGNISE POTENTIAL",
+            subtitle: "See Possibility Before It Seeks Recognition.",
+            text: "Identify students whose curiosity, resilience and imagination suggest exceptional promise, and encourage them to pursue ideas capable of creating meaningful impact."
         },
 
         {
-            icon:"🚀",
-            title:"Promote Entrepreneurship",
-            text:"Inspire students to explore startup opportunities, competitions, hackathons and innovation programs."
+            icon: "🌉",
+            title: "CREATE PATHWAYS",
+            subtitle: "Bridge Talent with Opportunity.",
+            text: "Connect aspiring innovators with mentors, founders, researchers, industry experts and programmes that expand both their perspective and their potential."
         },
 
         {
-            icon:"🔍",
-            title:"Identify Innovators",
-            text:"Recognize promising students and innovative ideas that can be nurtured through AIC-INFED."
+            icon: "🌱",
+            title: "CULTIVATE CULTURE",
+            subtitle: "Build an Environment Where Innovation Thrives.",
+            text: "Encourage entrepreneurial thinking, interdisciplinary collaboration and intellectual curiosity so that innovation becomes part of everyday academic life."
         },
 
         {
-            icon:"🤝",
-            title:"Connect Students",
-            text:"Bridge the gap between your institution and the AIC-INFED innovation ecosystem."
+            icon: "📣",
+            title: "ADVOCATE",
+            subtitle: "Champion Ideas Worth Pursuing.",
+            text: "Support promising student-led initiatives by providing encouragement, visibility and guidance during the earliest stages of their innovation journey."
         },
 
         {
-            icon:"🎯",
-            title:"Conduct Activities",
-            text:"Organize at least three flagship innovation and entrepreneurship engagements every academic year."
+            icon: "🎯",
+            title: "LEAD",
+            subtitle: "Demonstrate Leadership Through Action.",
+            text: "Facilitate innovation engagements, encourage participation and contribute consistently to strengthening your institution's culture of innovation."
         },
 
         {
-            icon:"📊",
-            title:"Share Impact",
-            text:"Provide periodic updates highlighting student participation, activities and innovation outcomes."
+            icon: "🤝",
+            title: "REPRESENT",
+            subtitle: "Strengthen an Enduring Partnership.",
+            text: "Serve as the institutional bridge between your campus and AIC-INFED, fostering meaningful collaboration and long-term engagement across the innovation ecosystem."
         }
 
     ];
 
     return `
 
-<section id="roles">
+<section id="role">
 
-<div class="section-heading">
+    <div class="role-container">
 
-<span>ROLES & RESPONSIBILITIES</span>
+        <div class="section-heading role-heading">
 
-<h2>
+            <span>
+                THE RESPONSIBILITY OF LEADERSHIP
+            </span>
 
-What You'll Do as a Faculty Ambassador
+            <h2>
+                The Work Behind Every Innovation Ecosystem.
+            </h2>
 
-</h2>
+            <p>
+                Innovation rarely begins with funding or infrastructure. More often, it begins with an educator who recognises potential before it becomes visible to everyone else.
+            </p>
 
-<p>
+            <p>
+                Every thriving innovation ecosystem is shaped by individuals who ask better questions, encourage thoughtful risk-taking and create opportunities long before success becomes evident.
+            </p>
 
-As a Faculty Ambassador, you'll play a vital role in nurturing innovation, connecting students with opportunities, and strengthening the entrepreneurial ecosystem within your institution.
+            <p>
+                The AIC-INFED Faculty Ambassador Programme recognises that meaningful institutional change is not driven by initiatives alone. It is sustained by educators who choose to invest their time, judgement and influence in the people who will define the future.
+            </p>
 
-</p>
+            <p>
+                This role is not an additional responsibility. It is an opportunity to shape the conditions in which innovation can flourish.
+            </p>
 
-</div>
+        </div>
 
-<div class="roles-grid">
 
-${roles.map(role=>`
+        <div class="role-grid">
 
-<div class="role-card">
+            ${responsibilities.map((item) => `
 
-<div class="role-icon">
+                <article class="role-card">
 
-${role.icon}
+                    <div class="role-card-header">
 
-</div>
+                        <div class="role-icon">
+                            ${item.icon}
+                        </div>
 
-<h3>${role.title}</h3>
+                    </div>
 
-<p>${role.text}</p>
+                    <div class="role-card-content">
 
-</div>
+                        <h3>${item.title}</h3>
 
-`).join("")}
+                        <h4>${item.subtitle}</h4>
 
-</div>
+                        <p>${item.text}</p>
+
+                    </div>
+
+                </article>
+
+            `).join("")}
+
+        </div>
+
+
+        <div class="role-highlight">
+
+            <span class="role-highlight-line"></span>
+
+            <h2>
+                Every institution remembers the ideas that changed it.
+            </h2>
+
+            <h3>
+                Those ideas are remembered because someone chose to recognise their potential before anyone else did.
+            </h3>
+
+        </div>
+
+    </div>
 
 </section>
 
