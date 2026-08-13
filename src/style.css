@@ -3662,3 +3662,450 @@ FOOTER RESPONSIVE
     }
 
 }
+/*=========================================================
+ELIGIBILITY
+=========================================================*/
+
+#eligibility{
+
+    padding:140px 80px;
+
+    background:#FFF9F2;
+
+}
+
+.eligibility-container{
+
+    max-width:1280px;
+
+    margin:0 auto;
+
+}
+
+
+/*=========================================================
+ELIGIBILITY HEADING
+=========================================================*/
+
+#eligibility .eligibility-heading{
+
+    max-width:900px;
+
+    margin:0 auto 65px;
+
+    text-align:center;
+
+}
+
+#eligibility .eligibility-heading span{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    color:#F58220;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:2.6px;
+
+    text-transform:uppercase;
+
+}
+
+#eligibility .eligibility-heading h2{
+
+    margin:0 auto 28px;
+
+    font-family:"Playfair Display", serif;
+
+    font-size:58px;
+
+    line-height:1.12;
+
+    font-weight:700;
+
+    color:#171717;
+
+}
+
+#eligibility .eligibility-heading p{
+
+    max-width:790px;
+
+    margin:0 auto;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#666666;
+
+}
+
+#eligibility .eligibility-heading strong{
+
+    color:#333333;
+
+    font-weight:600;
+
+}
+
+
+/*=========================================================
+IDEAL APPLICANTS
+=========================================================*/
+
+.eligibility-intro{
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+}
+
+.eligibility-intro span{
+
+    color:#8A847E;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:2.3px;
+
+}
+
+
+/*=========================================================
+ELIGIBILITY GRID
+=========================================================*/
+
+.eligibility-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+
+/*=========================================================
+ELIGIBILITY CARD
+=========================================================*/
+
+.eligibility-card{
+
+    position:relative;
+
+    min-height:360px;
+
+    padding:38px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E8E3DD;
+
+    border-radius:24px;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.eligibility-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:38px;
+
+    width:40px;
+
+    height:3px;
+
+    background:#F58220;
+
+    transition:width .35s ease;
+
+}
+
+.eligibility-card:hover{
+
+    transform:translateY(-7px);
+
+    border-color:#F58220;
+
+    box-shadow:0 22px 50px rgba(0,0,0,.07);
+
+}
+
+.eligibility-card:hover::before{
+
+    width:75px;
+
+}
+
+
+/*=========================================================
+ELIGIBILITY ICON
+=========================================================*/
+
+.eligibility-icon{
+
+    width:62px;
+
+    height:62px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:60px;
+
+    background:#FFF2E5;
+
+    border-radius:18px;
+
+    font-size:26px;
+
+}
+
+
+/*=========================================================
+ELIGIBILITY CARD CONTENT
+=========================================================*/
+
+.eligibility-card h3{
+
+    margin:0 0 10px;
+
+    color:#F58220;
+
+    font-size:12px;
+
+    line-height:1.5;
+
+    font-weight:700;
+
+    letter-spacing:1.7px;
+
+}
+
+.eligibility-card h4{
+
+    margin:0 0 20px;
+
+    font-family:"Playfair Display", serif;
+
+    font-size:28px;
+
+    line-height:1.25;
+
+    font-weight:700;
+
+    color:#171717;
+
+}
+
+.eligibility-card p{
+
+    margin:0;
+
+    color:#666666;
+
+    font-size:15px;
+
+    line-height:1.85;
+
+}
+
+
+/*=========================================================
+PROGRAMME DETAILS
+=========================================================*/
+
+.eligibility-note{
+
+    max-width:950px;
+
+    margin:70px auto 0;
+
+    padding:32px 45px;
+
+    display:grid;
+
+    grid-template-columns:1fr auto 1fr auto 1fr;
+
+    align-items:center;
+
+    background:#FFFFFF;
+
+    border:1px solid #E8E3DD;
+
+    border-radius:20px;
+
+}
+
+.eligibility-note-item{
+
+    text-align:center;
+
+}
+
+.eligibility-note-item span{
+
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#A09A94;
+
+    font-size:10px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.eligibility-note-item strong{
+
+    display:block;
+
+    color:#171717;
+
+    font-family:"Playfair Display", serif;
+
+    font-size:23px;
+
+    font-weight:700;
+
+}
+
+.eligibility-divider{
+
+    width:1px;
+
+    height:45px;
+
+    background:#E2DDD7;
+
+}
+
+
+/*=========================================================
+ELIGIBILITY FOOTNOTE
+=========================================================*/
+
+.eligibility-footnote{
+
+    margin:22px auto 0;
+
+    text-align:center;
+
+    color:#777777;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+
+/*=========================================================
+ELIGIBILITY RESPONSIVE
+=========================================================*/
+
+@media(max-width:1000px){
+
+    .eligibility-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .eligibility-card{
+
+        min-height:auto;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    #eligibility{
+
+        padding:90px 30px;
+
+    }
+
+    #eligibility .eligibility-heading{
+
+        margin-bottom:50px;
+
+        text-align:left;
+
+    }
+
+    #eligibility .eligibility-heading h2{
+
+        font-size:42px;
+
+    }
+
+    #eligibility .eligibility-heading p{
+
+        font-size:17px;
+
+    }
+
+    .eligibility-intro{
+
+        text-align:left;
+
+    }
+
+    .eligibility-card{
+
+        padding:32px;
+
+    }
+
+    .eligibility-icon{
+
+        margin-bottom:45px;
+
+    }
+
+    .eligibility-note{
+
+        padding:30px;
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+    }
+
+    .eligibility-divider{
+
+        width:100%;
+
+        height:1px;
+
+    }
+
+}

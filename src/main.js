@@ -5,11 +5,13 @@ import Hero from "./components/hero.js";
 import About from "./components/about.js";
 import Why from "./components/why.js";
 import Faculty from "./components/faculty.js";
+import ELIGIBILITY from "./components/eligibility.js";
 import Roles from "./components/roles.js";
 import Benefits from "./components/benefits.js";
 import FAQ from "./components/faq.js";
 import Contact from "./components/contact.js";
 import Footer from "./components/footer.js";
+import Eligibility from "./components/eligibility.js";
 
 document.querySelector("#app").innerHTML = `
 
@@ -24,6 +26,8 @@ ${About()}
 ${Why()}
 
 ${Faculty()}
+
+${Eligibility()}
 
 ${Roles()}
 

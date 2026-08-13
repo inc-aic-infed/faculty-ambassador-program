@@ -21,6 +21,7 @@ export default function Sidebar() {
         <a href="#about">📖 About Program</a>
         <a href="#why">🚀 Why AIC-INFED</a>
         <a href="#faculty">👨‍🏫 Why Faculty Matter</a>
+        <a href="#eligibility">✓ Eligibility</a>
         <a href="#role">📋 Roles & Responsibilities</a>
         <a href="#benefits">🏅 Benefits</a>
         <a href="#faq">❓ FAQ</a>

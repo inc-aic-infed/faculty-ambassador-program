@@ -11,7 +11,7 @@ export default function About() {
                 </span>
 
                 <h2>
-                    An Distinguished Community of Educators. A Larger Ambition for Innovation.
+                    A Community Built Around Ideas. A Programme Built for Impact.
                 </h2>
 
                 <p>
