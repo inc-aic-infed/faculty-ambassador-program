@@ -1,6 +1,6 @@
 export default function Role() {
 
-    const responsibilities = [
+   const responsibilities = [
 
         {
             icon: "🔎",
@@ -45,6 +45,47 @@ export default function Role() {
         }
 
     ];
+
+
+    const journey = [
+
+        {
+            title: "APPLY",
+            subtitle: "Put Your Intent Forward."
+        },
+
+        {
+            title: "EARN YOUR PLACE",
+            subtitle: "Selected on Merit."
+        },
+
+        {
+            title: "ENTER THE CIRCLE",
+            subtitle: "Begin Your AIC-INFED Journey."
+        },
+
+        {
+            title: "TAKE THE MANTLE",
+            subtitle: "Step Into the Role of Faculty Ambassador."
+        },
+
+        {
+            title: "ACTIVATE YOUR CAMPUS",
+            subtitle: "Turn Innovation Into Action."
+        },
+
+        {
+            title: "CONNECT & AMPLIFY",
+            subtitle: "Extend Opportunity Across Your Institution."
+        },
+
+        {
+            title: "GRADUATE INTO THE NETWORK",
+            subtitle: "Carry the Association Forward."
+        }
+
+    ];
+
 
     return `
 
@@ -110,7 +151,67 @@ export default function Role() {
             `).join("")}
 
         </div>
+</div>
 
+
+        <div class="faculty-journey">
+
+            <div class="journey-heading">
+
+                <span>
+                    THE FACULTY AMBASSADOR JOURNEY
+                </span>
+
+                <h3>
+                    One Year. Seven Defining Moments.
+                    <em>A Lasting Institutional Imprint.</em>
+                </h3>
+
+            </div>
+
+
+            <div class="journey-track">
+
+                ${journey.map((item, index) => `
+
+                    <div class="journey-stage">
+
+                        <div class="journey-marker">
+                            <span>
+                                ${String(index + 1).padStart(2, "0")}
+                            </span>
+                        </div>
+
+                        <div class="journey-copy">
+
+                            <h4>
+                                ${item.title}
+                            </h4>
+
+                            <p>
+                                ${item.subtitle}
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                `).join("")}
+
+            </div>
+
+
+            <div class="journey-closing">
+
+                <p>
+                    A one-year journey from individual intent to institutional influence—
+                    designed to strengthen the people, pathways and possibilities that
+                    shape entrepreneurship on campus.
+                </p>
+
+            </div>
+
+        </div>
 
         <div class="role-highlight">
 

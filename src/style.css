@@ -4109,3 +4109,407 @@ ELIGIBILITY RESPONSIVE
     }
 
 }
+
+/*=========================================================
+FACULTY AMBASSADOR JOURNEY
+=========================================================*/
+
+.faculty-journey{
+
+    margin-top:120px;
+
+    padding-top:90px;
+
+    border-top:1px solid #E4DED7;
+
+}
+
+
+/*=========================================================
+JOURNEY HEADING
+=========================================================*/
+
+.journey-heading{
+
+    max-width:760px;
+
+    margin-bottom:75px;
+
+}
+
+.journey-heading > span{
+
+    display:block;
+
+    margin-bottom:18px;
+
+    color:#F58220;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:2.5px;
+
+    text-transform:uppercase;
+
+}
+
+.journey-heading h3{
+
+    margin:0;
+
+    font-family:"Playfair Display", serif;
+
+    font-size:46px;
+
+    line-height:1.18;
+
+    font-weight:700;
+
+    color:#171717;
+
+}
+
+.journey-heading h3 em{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#F58220;
+
+    font-style:normal;
+
+}
+
+
+/*=========================================================
+JOURNEY TRACK
+=========================================================*/
+
+.journey-track{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:0;
+
+}
+
+
+/* horizontal connecting line */
+
+.journey-track::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:27px;
+
+    left:7%;
+
+    right:7%;
+
+    height:1px;
+
+    background:#DDD7D0;
+
+    z-index:0;
+
+}
+
+
+/*=========================================================
+JOURNEY STAGE
+=========================================================*/
+
+.journey-stage{
+
+    position:relative;
+
+    z-index:1;
+
+    padding-right:20px;
+
+}
+
+
+/*=========================================================
+MARKER
+=========================================================*/
+
+.journey-marker{
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:28px;
+
+    border:1px solid #E1DBD5;
+
+    border-radius:50%;
+
+    background:#FFFFFF;
+
+    transition:all .3s ease;
+
+}
+
+.journey-marker span{
+
+    color:#F58220;
+
+    font-size:10px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+}
+
+
+/*=========================================================
+COPY
+=========================================================*/
+
+.journey-copy{
+
+    max-width:150px;
+
+}
+
+.journey-copy h4{
+
+    margin:0 0 10px;
+
+    color:#171717;
+
+    font-size:11px;
+
+    line-height:1.5;
+
+    font-weight:800;
+
+    letter-spacing:1.25px;
+
+}
+
+.journey-copy p{
+
+    margin:0;
+
+    color:#77716C;
+
+    font-family:"Playfair Display", serif;
+
+    font-size:15px;
+
+    line-height:1.55;
+
+}
+
+
+/*=========================================================
+HOVER
+=========================================================*/
+
+.journey-stage:hover .journey-marker{
+
+    background:#F58220;
+
+    border-color:#F58220;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 28px rgba(245,130,32,.18);
+
+}
+
+.journey-stage:hover .journey-marker span{
+
+    color:#FFFFFF;
+
+}
+
+.journey-stage:hover .journey-copy h4{
+
+    color:#F58220;
+
+}
+
+
+/*=========================================================
+CLOSING
+=========================================================*/
+
+.journey-closing{
+
+    max-width:850px;
+
+    margin-top:70px;
+
+    padding:28px 0 0 28px;
+
+    border-left:2px solid #F58220;
+
+}
+
+.journey-closing p{
+
+    margin:0;
+
+    font-family:"Playfair Display", serif;
+
+    font-size:22px;
+
+    line-height:1.7;
+
+    color:#3F3B38;
+
+}
+
+
+/*=========================================================
+TABLET
+=========================================================*/
+
+@media(max-width:1200px){
+
+    .journey-track{
+
+        grid-template-columns:repeat(4,1fr);
+
+        gap:45px 20px;
+
+    }
+
+    .journey-track::before{
+
+        display:none;
+
+    }
+
+}
+
+
+/*=========================================================
+MOBILE
+=========================================================*/
+
+@media(max-width:768px){
+
+    .faculty-journey{
+
+        margin-top:80px;
+
+        padding-top:65px;
+
+    }
+
+    .journey-heading{
+
+        margin-bottom:50px;
+
+    }
+
+    .journey-heading h3{
+
+        font-size:38px;
+
+    }
+
+    .journey-track{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:0;
+
+        padding-left:0;
+
+    }
+
+    .journey-stage{
+
+        display:grid;
+
+        grid-template-columns:55px 1fr;
+
+        gap:22px;
+
+        padding:0 0 42px;
+
+    }
+
+    .journey-stage:not(:last-child)::after{
+
+        content:"";
+
+        position:absolute;
+
+        left:27px;
+
+        top:55px;
+
+        bottom:0;
+
+        width:1px;
+
+        background:#DDD7D0;
+
+    }
+
+    .journey-marker{
+
+        margin-bottom:0;
+
+    }
+
+    .journey-copy{
+
+        max-width:none;
+
+        padding-top:5px;
+
+    }
+
+    .journey-copy h4{
+
+        font-size:12px;
+
+    }
+
+    .journey-copy p{
+
+        font-size:16px;
+
+    }
+
+    .journey-closing{
+
+        margin-top:25px;
+
+        padding-left:20px;
+
+    }
+
+    .journey-closing p{
+
+        font-size:19px;
+
+    }
+
+}
