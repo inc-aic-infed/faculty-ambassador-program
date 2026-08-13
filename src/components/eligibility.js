@@ -19,8 +19,8 @@ export default function Eligibility() {
         {
             icon: "🔬",
             title: "INCUBATION CENTRE REPRESENTATIVES",
-            subtitle: "Campus Incubation & Entrepreneurship",
-            text: "Faculty members managing, coordinating or actively associated with campus incubation centres and entrepreneurship initiatives."
+            subtitle: "Incubation & Entrepreneurship Centres",
+            text: "Faculty members managing, coordinating or actively associated with incubation centres and entrepreneurship initiatives."
         }
 
     ];
