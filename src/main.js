@@ -6,6 +6,7 @@ import About from "./components/about.js";
 import Why from "./components/why.js";
 import Faculty from "./components/faculty.js";
 import ELIGIBILITY from "./components/eligibility.js";
+import Journey from "./components/journey.js";
 import Roles from "./components/roles.js";
 import Benefits from "./components/benefits.js";
 import FAQ from "./components/faq.js";
@@ -28,6 +29,8 @@ ${Why()}
 ${Faculty()}
 
 ${Eligibility()}
+
+${Journey()}
 
 ${Roles()}
 
